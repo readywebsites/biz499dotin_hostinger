@@ -25,7 +25,7 @@ SECRET_KEY = '25^!ejyfb)^7a699z052z%$#x6_#%hbay6@y#ax*@9qt#!e8g-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['137.184.151.214','biz499.in' ,'www.biz499.in']
+ALLOWED_HOSTS = ['157.173.218.111:85','biz499.in' ,'www.biz499.in','157.173.218.111']
 
 
 # Application definition
