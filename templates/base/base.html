@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+{% block title_keywords %}
+{% endblock title_keywords %}
+{% include "base/head.html" %}
+
+<!-- Hotjar Tracking Code for my site -->
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11452368119">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11452368119');
+</script>
+
+{% if request.path == '/' %}
+
+  {% if form_submitted %}
+  <!-- Event snippet for Submit lead form conversion page -->
+  <script>
+    gtag('event', 'conversion', {'send_to': 'AW-11452368119/yvDqCOLbg4EZEPeJ9dQq'});
+  </script>
+
+      <!-- Thank you message -->
+      <div class="alert alert-success" role="alert" style="text-align: center;">
+        Thank you for submitting your enquiry, our team will contact you soon.
+      </div>
+      
+  {% endif %}
+
+ {% endif %}
+
+
+ <!-- Google Tag callback script -->
+ <script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-11452368119/2jRxCKSYiboZEPeJ9dQq',
+        'event_callback': callback
+    });
+    return false;
+  }
+  </script>
+
+    <!-- Step 3: Modify the button -->
+    <script>
+      document.getElementById('whatsappLinkLarge').onclick = function() {
+        gtag_report_conversion('');
+      };
+    </script>
+    <script>
+      document.getElementById('whatsappLinkSmall').onclick = function() {
+        gtag_report_conversion('');
+      };
+    </script>
+    <script>
+      document.getElementById('submit_button_modal').onclick = function() {
+        gtag_report_conversion('');
+      };
+    </script>
+
+</head>
+
+<body>
+{% include "base/header.html" %}
+
+
+{% block content %}
+{% endblock content %}
+
+{% include "base/footer.html" %}
+{% include "base/modal.html" %}
+{% include "base/cont_button.html" %}
+{% include "base/scripts.html" %}
+
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block title_keywords %}
+    <title>Get in Touch | Contact Our Expert Team in Surat</title>
+    <meta name="description" content="Reach out to our Surat-based team for cutting-edge marketing, website development, and graphic design services tailored to your needs.">
+    <meta name="keywords" content="contact marketing agency in Surat, website agency in Surat, freelance graphics designers, website developer jobs in Surat, graphics design agency in Surat">
+
+{% endblock title_keywords %}
+
+ 
+
+    <!-- Navigation Bar -->
+    
+{% block content %}
+
+  <div id="hero_about" style="padding: 30px 0px 30px 0px;" >
+
+    <div data-aos="zoom-out" data-aos-delay="100">
+      <div class="row">
+ 
+          <h1 >Contact Us</h1>
+
+      </div>
+    </div>
+
+  </div>
+
+
+<main id="main">
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+
+          <p style="font-size: 1.2rem; font-weight: 800;">We always appreciate receiving messages from our valued customers. Whether you have inquiries about our services, require assistance with an order, or simply wish to engage in a conversation, we're available and eager to assist.</p>
+
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-6  d-flex align-items-center">
+            
+            <div class="row">
+              <p style="font-size: 1.2rem; font-weight: 800;">You can also contact us via email, phone, or mail.</p>
+              <div class="col-md-12">
+                <div class="info-box">
+                  <i class="bx bx-map"></i>
+                  <h3>Our Address</h3>
+                  <p>FF 231, Happy Hallmark Shoppers, Vesu, Surat 395007 </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4">
+                  <i class="bx bx-envelope"></i>
+                  <h3>Email Us</h3>
+                  <p>info@biz499.in<br>sales@example.com</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4">
+                  <i class="bx bx-phone-call"></i>
+                  <h3>Call Us</h3>
+                  <p>+91 9106312511<br>+91 7727 999 499</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <form action="{% url 'submit_contact_form' %}" method="post" role="form" class="php-email-form">
+              {% csrf_token %}
+              <div class="section-title">
+                <h2>Get in Touch</h2>
+              </div>
+              <div class="row">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="budget" id="budget" placeholder="Your Budget in INR or Dollars" required>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="business_type" rows="5" placeholder="Please Tell us more about your business!" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button name="submit_contact" style="width: 100%;font-size: 1.1rem;font-weight: 600;" type="submit">Submit</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    
+    <section style="  width: 100%;
+    background-color: #e03a3c;
+    position: relative;
+    text-align: center;">
+<div class="container">
+      <p style="text-transform: uppercase; color: white;font-size: 1.2rem; font-weight: 600;">If you happen to be in the vicinity, we warmly welcome you to visit our store! You can find us at our office address in Vesu,Surat and our approachable team will be delighted to provide you with a tour and address any inquiries you might have. We hold a strong belief in the significance of personal connections and greatly appreciate the chance to meet our customers in person.</p>
+    </div>
+    </section>
+
+    <section style="padding: 0;">
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.561424535206!2d72.77142627389887!3d21.130044384294717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be053463f42d25f%3A0x3e064a447a031ed1!2sBiz499!5e0!3m2!1sen!2sin!4v1697718612952!5m2!1sen!2sin" width="1600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section style="  width: 100%;
+ 
+    position: relative;
+    text-align: center;">
+<div class="container">
+
+      <p style="font-size: 1.2rem; font-weight: 800;">We really care about giving you the best service. We'll do our very best to answer your message fast and assist you in any way we can. Your happiness means a lot to us, and we appreciate your business.</p>
+    </div>
+    </section>
+
+
+
+  </main><!-- End #main -->
+
+  
+  {% endblock content %}

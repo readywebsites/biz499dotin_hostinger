@@ -1,0 +1,147 @@
+{% extends 'base/base.html' %}
+
+
+{% block title_keywords %}
+    <title>Leading Marketing and Website Agency in Surat | Home</title>
+    <meta name="description" content="Discover top-notch marketing and web solutions at our Surat-based agency.">
+    <meta name="keywords" content="marketing agency in Surat, website agency in Surat, fast website development, freelance web developers, best seo agency in Surat">
+
+
+
+{% endblock title_keywords %}
+
+ 
+
+<!-- Navigation Bar -->
+
+{% block content %}
+
+
+
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container" data-aos="zoom-out" data-aos-delay="100">
+      <div class="row">
+        <div class="col">
+          <h1 class="mb-4 mt-5">Welcome to biz499</h1>
+          <h2>The digital visionaries at Biz499 are here to transform your online aspirations into a tangible reality! Our team of creative experts excels in crafting visually stunning <span class="underline">websites</span>, executing powerful digital<span class="underline"> marketing</span>  strategies, and crafting compelling <span class="underline"> logos</span> that leave an indelible mark. We have a fervent commitment to propel your businesses, and we spare no effort to guarantee that your digital footprint stands unrivaled. If you're prepared to unlock your ultimate potential then your search ends with Biz499!</h2>
+          <a href="#our_services" class="btn-get-started scrollto">Explore Services <i class="bi bi-chevron-right"> </i></a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <main id="main">
+
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row no-gutters">
+          <div class="content col-xl-5 d-flex align-items-center">
+            <div class="content">
+              <h3>About Biz499</h3>
+              <p>
+                We are a brand that belives in business enablement of entreprenurs and inspiring business people. We believe business is not rocket science and with a proper plan and execution any business can be made profitably viable.
+              </p>
+              <a class="about-btn" data-bs-toggle="modal" data-bs-target="#myModal" ><span>Contact Now</span> <i class="bx bx-chevron-right"></i></a>
+            </div>
+          </div>
+          <div class="col-xl-7 d-flex align-items-stretch">
+            <div class="icon-boxes d-flex flex-column justify-content-center mt-4 mt-xl-0 ">
+              <div class="row">
+                <div class="col-md-12 icon-box mt-4 mt-xl-0" data-aos="fade-up" data-aos-delay="100">
+                  <div class="d-flex flex-column align-items-left flex-xl-row">
+                    <div class="icon"><i class='bx bxs-calendar'></i></div>
+                    <div class="content">
+                      <h4>Started in 2012</h4>
+                      <p>Since the year we started we have catered to over 300 businesses and counting.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <div class="d-flex flex-column align-items-left flex-xl-row">
+                    <div class="icon"><i class="bx bxs-group"></i></div>
+                    <div class="content">
+                      <h4>Qualified Team</h4>
+                      <p>Professionally qualified developers, contetent writers & graphics designers with IITian Founder.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <div class="d-flex flex-column align-items-left flex-xl-row">
+                    <div class="icon"><i class="bx bxs-like"></i></div>
+                    <div class="content">
+                      <h4>Quality Services</h4>
+                      <p>When we work for you, you'll surpised with the quality of work & results we produce.</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div><!-- End .content-->
+          </div>
+          
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+
+    <!-- services section start  -->
+    <section id="our_services" class="container_services" data-aos="fade-up">
+      <h1>Our Services</h1>
+      <section class="card__container">
+        <div class="card__bx" style="--clr: #89ec5b">
+          <div class="card__data">
+            <div class="card__icon">
+              <i class="bi bi-brush-fill"></i>
+            </div>
+            <div class="card__content">
+              <h3>Designing</h3>
+              <p>We have graphics desigers to meet all your needs, from social media posts to ads and prototypings.</p>
+              <a href="{% url 'graphicsinsurat' %}">Explore<i class="bi bi-chevron-right" style="margin-left: 5px;font-weight: 800;"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card__bx" style="--clr: #eb5ae5">
+          <div class="card__data">
+            <div class="card__icon">
+              <i class="bi bi-code-slash"></i>
+            </div>
+            <div class="card__content">
+              <h3>Development</h3>
+              <p>If you're looking for developers to up your business, look no further.</p>
+              <a href="{% url 'designers' %}">Explore<i class="bi bi-chevron-right" style="margin-left: 5px;font-weight: 800;"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card__bx" style="--clr: #5b98eb">
+          <div class="card__data">
+            <div class="card__icon">
+              <i class="bi bi-search"></i>
+            </div>
+            <div class="card__content">
+              <h3>Digital Marketing</h3>
+              <p>Digital marketing is our forte and in terms of value delivery we have set new industry standards.</p>
+              <a href="{% url 'digimar' %}">Explore<i class="bi bi-chevron-right" style="margin-left: 5px;font-weight: 800;"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    
+    </section>
+
+    <!-- end service section  -->
+
+  </main><!-- End #main -->
+
+  {% endblock content %}
+
+<!-- Include Bootstrap JS from a CDN -->
+

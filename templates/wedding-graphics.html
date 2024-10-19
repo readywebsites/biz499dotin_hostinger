@@ -1,0 +1,486 @@
+{% extends 'base/base.html' %}
+
+{% load static %}
+
+{% block title_keywords %}
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<title>Wedding Graphics Design | Unique Invitation Videos and Designs</title>
+    <meta name="description" content="Specializing in wedding graphics design, our agency creates unique wedding invitation videos and designs, tailored to your special day.">
+    <meta name="keywords" content="wedding design agency in Surat, wedding graphics agency, wedding invitaion videos, affordable wedding invitations, wedding graphics">
+
+
+
+
+<style>
+  .accordion-item-title {
+      flex-grow: 1;
+      margin-left: 10px; /* or any desired space between icon and title */
+  }
+</style>
+<style>
+  .accordion {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /* margin: 30px auto 20px; */
+    /* background: #FFF; */
+  }
+  
+  .accordion .link {
+    cursor: pointer;
+    display: block;
+    padding: 15px 15px 15px 42px;
+    color: #FFF; /* Updated to white text color */
+    font-size: 1.15rem; /* Increased font-size */
+    font-weight: 700;
+    background: #E21B2B; /* Updated to the red color from the image */
+    border-bottom: 1px solid #FFF; /* Changed to white border color */
+    position: relative;
+  }
+  
+  .accordion li:last-child .link {
+    border-bottom: 0;
+  }
+  
+  .accordion li:nth-child(3) i {
+    left: 18px;
+}
+
+  .accordion li i {
+    position: absolute;
+    top: 18px;
+    left: 12px;
+    font-size: 24px; /* Increased icon size */
+    color: #FFF; /* Changed to white color */
+  }
+  
+  .accordion li i.fa-chevron-down {
+    right: 12px;
+    left: auto;
+    font-size: 22px; /* Adjusted size */
+  }
+  
+  /* .accordion li.open .link {
+    color: #b63b4d;
+  }
+  
+  .accordion li.open i {
+    color: #b63b4d;
+  } */
+  
+  .accordion li.open i.fa-chevron-down {
+    transform: rotate(180deg);
+  }
+  
+  .accordion > li > p {
+    display: none;
+    background: #F2F2F2; /* Lighter gray background for submenu */
+    font-size: 18px; /* Increased font size */
+    padding: 12px;
+    padding-left: 42px;
+}
+
+  </style>
+
+
+<style>
+  /* .tab-container { display: block; } */
+.container.mt-2 { display: none; }
+
+@media screen and (max-width: 768px) {
+   .container_desktop { display: none; }
+   .container.mt-2 { display: block; }
+}
+</style>
+
+<style>
+/* Style the tab */
+.tab {
+  float: left;
+
+  background-color: #f1f1f1;
+  width: 30%;
+  min-height: 210px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1.2rem;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: white;
+    color: red;
+}
+
+.tab button.active:first-child {
+    border-bottom: 1px solid #ccc; /* Border at the bottom for the first child */
+}
+
+.tab button.active:last-child {
+    border-top: 1px solid #ccc; /* Border at the top for the last child */
+}
+
+.tab button.active:not(:first-child):not(:last-child) {
+    border-top: 1px solid #ccc; /* Border at the top for others */
+    border-bottom: 1px solid #ccc; /* Border at the bottom for others */
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  width: 70%;
+  min-height: 210px;
+}
+
+.tab-container {
+  border: 1px solid #ccc; /* Add a border around the entire container */
+  display: flex; /* Make the children (.tab and .tabcontent) display side by side */
+}
+
+</style>
+      
+
+
+{% endblock title_keywords %}
+
+ 
+
+<!-- Navigation Bar -->
+
+{% block content %}
+
+
+<section id="hero" class="d-flex align-items-center" style="background: url('/static/img/wedding-hero.png')  center no-repeat;">
+
+  <div class="container" data-aos="zoom-out" data-aos-delay="100">
+    <div class="row">
+      <div class="col">
+        <h1 class="mb-4 mt-5">Custom Indian Wedding Invitations: Caricatures, Videos & Cultural Themes</h1>
+        <h2>Explore our specialized Indian Wedding Invitation services, offering Couple Caricatures, short Video Invites, and themed designs. Choose from Royal, Creative, Hindu, Muslim, Hindi, and Gujarati themes for invitations that blend tradition with personal style, making your big day unforgettable.</h2>
+        <a data-bs-toggle="modal" data-bs-target="#myModal"  class="btn-get-started" style="background: #e03a3c; border-color: #e03a3c; animation: none; ">Contact Now <i class="bi bi-chevron-right"> </i></a>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+<section class="p-md--5">
+  <div class="container">
+        <!-- pre_Secti -->
+        <div class="row mb-5 p-5 " style="background-color: #f3f3f3;">
+          <div class="col-md-6">
+            <img src="{% static 'img/pre_wedd-1.png' %}" alt="Website Design" class="img-fluid">
+          </div>
+          <div class="col-md-6">
+            <h2 class="mb-3">Timeless Allure: Vintage Classic Wedding Invitations</h2>
+            <p class="mb-3">Step back in time with our Vintage Classic themed wedding invitations, reminiscent of India's rich historical era. Featuring classic fonts, retro patterns, and a palette of sophisticated colors, these invitations are perfect for those who wish to honor the past while celebrating the future. They embody elegance and timelessness, appealing to lovers of all things vintage and classical.</p>
+          </div>
+        </div>
+        
+        <!-- pre_Section 2: User-Friendly WordPress Development -->
+        <div class="row mb-5 mt-5 p-5 ">
+          <div class="col-md-6">
+            <h2 class="mb-3">Blend of Modernity: Fusion Contemporary Wedding Invitations</h2>
+            <p class="mb-3">Experience the perfect blend of modern aesthetics and traditional elements with our Fusion Contemporary wedding invitations. These designs mix contemporary art styles with classic Indian motifs, offering a fresh, eclectic look. Ideal for couples who appreciate a modern twist to traditional symbolism, these invitations are a testament to creative expression.</p>
+          </div>
+          <div class="col-md-6">
+            <img src="{% static 'img/pre_wedd-2.png' %}" alt="User-Friendly Development" class="img-fluid">
+          </div>
+        </div>
+    <!-- Secti -->
+    <div class="row mb-5 p-5 " style="background-color: #f3f3f3;">
+      <div class="col-md-6">
+        <img src="{% static 'img/wedd-1.png' %}" alt="Website Design" class="img-fluid">
+      </div>
+      <div class="col-md-6">
+        <h2 class="mb-3">Regal Elegance: Royal Indian Wedding Invitations</h2>
+        <p class="mb-3">Immerse in the splendor of royal heritage with our Royal themed wedding invitations. Inspired by the opulence of Indian palaces and the elegance of royal traditions, these invitations are crafted with rich colors, intricate patterns, and luxurious details. Perfect for couples seeking to infuse their special day with a touch of majesty.</p>
+      </div>
+    </div>
+    
+    <!-- Section 2: User-Friendly WordPress Development -->
+    <div class="row mb-5 mt-5 p-5 ">
+      <div class="col-md-6">
+        <h2 class="mb-3">Innovative Charm: Creative Wedding Invites</h2>
+        <p class="mb-3">Celebrate your unique love story with our Creative themed wedding invitations. These invites break the mold with innovative designs, unconventional layouts, and a playful use of colors and graphics. Tailored for couples who desire a modern, artistic twist to their wedding announcements.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="{% static 'img/wedd-2.png' %}" alt="User-Friendly Development" class="img-fluid">
+      </div>
+    </div>
+
+    <!-- Section 3: Stunning WordPress Website Designs -->
+    <div class="row mb-5 mt-5 p-5" style="background-color: #f3f3f3;">
+      <div class="col-md-6">
+        <img src="{% static 'img/wedd-3.png' %}" alt="Website Designs" class="img-fluid">
+      </div>
+      <div class = "col-md-6">
+        <h2 class="mb-3">Traditional Grace: Hindu Wedding Invitations</h2>
+        <p class="mb-3">Honor the rich traditions of Hindu weddings with invitations that encapsulate the essence of these ancient rituals. Our Hindu themed invites feature traditional motifs, auspicious symbols, and Sanskrit shlokas, all harmoniously blended in designs that resonate with cultural significance and timeless grace.</p>
+      </div>
+    </div>
+
+    <!-- Section 4: Client-Centric WordPress Solutions -->
+    <div class="row mb-5 mt-5 p-5">
+
+      <div class="col-md-6">
+        <h2 class="mb-3">Islamic Elegance: Muslim Wedding Invites</h2>
+        <p class="mb-3">Reflect the beauty of Islamic culture in your wedding invitations. Our Muslim themed invites are adorned with Islamic geometric patterns, calligraphy, and motifs that evoke the spiritual and aesthetic heritage of Islam. They are designed to gracefully announce your union in a way that respects and celebrates Islamic traditions.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="{% static 'img/wedd-4.png' %}" alt="Client-Centric Solutions" class="img-fluid" style=";">
+      </div>
+    </div>
+
+    <!-- Section 5: WordPress Development Excellence -->
+    <div class="row mb-5 mt-5 p-5 " style="background-color: #f3f3f3;">
+      <div class="col-md-6">
+        <img src="{% static 'img/wedd-5.png' %}" alt="Development Excellence" class="img-fluid">
+      </div>
+      <div class="col-md-6">
+        <h2 class="mb-3">Cultural Richness: Hindi & Gujarati Wedding Invitations</h2>
+        <p class="mb-3">Embrace the linguistic and cultural diversity of India with our Hindi and Gujarati themed wedding invitations. These invites are not just about language but also about celebrating regional artistry and motifs. From traditional designs to contemporary styles, they represent the vibrant cultural tapestry of Hindi and Gujarati communities.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="hero_alt_down" class="d-flex align-items-center" style="background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.85)), url('/static/img/grap_3.png') bottom center no-repeat;">
+
+  <div class="container" data-aos="zoom-out" data-aos-delay="100">
+    <div class="row">
+      <div class="col">
+        <h1 class="mb-4 mt-5">Enhance Your Wedding Day with Bespoke Graphic Design</h1>
+        <p style="font-size:1.2rem;line-height:1.5rem;font-weight:400;color: white;">Graphic design in the context of weddings is more than just visual appeal; it's about creating memories and setting the tone for your special day. Our tailor-made designs are crafted to capture the essence of your love story, guide the aesthetic of your wedding, and reflect the unique bond you share. It's time to discover the magic of custom design and see how it can transform your wedding into an unforgettable experience. </p>
+      
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<section class="container"> 
+  <div class="container text-center" data-aos="zoom-out" data-aos-delay="100">
+        <h1 class="mb-5" style="font-size: 2.6rem;  font-weight: 700;">Transform Your Wedding Invitations with Biz499 </h1>
+
+  <p style="font-size: 1.2rem;font-weight: 500;">
+    Discover how Biz499 can elevate your wedding experience. Delve deeper into our array of bespoke wedding invitation designs and digital solutions. Each service is crafted meticulously to capture the essence of your love story and enhance the allure of your special day.
+
+  
+  </p>     
+
+</div>
+<div class="container_desktop">
+
+  <div class="tab-container">
+
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'Ideation')" id="defaultOpen">Couple Caricatures</button>
+      <button class="tablinks" onclick="openCity(event, 'Design')">10-Second Video Invitation</button>
+      <button class="tablinks" onclick="openCity(event, 'Development')">50-Second Wedding Event Schedule Video</button>
+      <button class="tablinks" onclick="openCity(event, 'Building')">Custom Video Creation</button>
+
+    </div>
+    
+    <div id="Ideation" class="tabcontent">
+      <h3 class="mt-4">Couple Caricatures</h3>
+      <p>Customized caricatures capturing your unique love story in a whimsical and artistic manner.</p>
+    </div>
+    
+    <div id="Design" class="tabcontent">
+      <h3 class="mt-4">10-Second Video Invitation</h3>
+      <p>A quick, engaging glimpse into your wedding, perfect for sharing on social media.</p> 
+    </div>
+    
+    <div id="Development" class="tabcontent">
+      <h3 class="mt-4">50-Second Wedding Event Schedule Video</h3>
+      <p>Detailed video showcasing the schedule of your wedding events, infused with personal touches.</p>
+    </div>
+    <div id="Building" class="tabcontent">
+      <h3 class="mt-4">Custom Video Creation</h3>
+      <p>Tailor-made videos that reflect your personal story and wedding theme..</p>
+    </div>      
+    </div>
+
+
+
+</div>
+
+    
+    
+    <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
+    
+
+
+<style>
+        .card {
+          border: 1px solid #ddd;
+          margin-bottom: 10px;
+      }
+      .card-header {
+          background-color: white;
+          color: black;
+          cursor: pointer;
+          border-bottom: 1px solid #ddd;
+          padding: 12px 16px;
+          font-size: 1.2rem;
+      }
+      .card-header[aria-expanded="true"] {
+          color: red;
+      }
+      .card-body {
+          background-color: white;
+          color: black;
+          padding: 16px;
+      }
+
+      /* Flexbox modifications */
+      .flex-container {
+          display: flex;
+          flex-direction: column;
+      }
+
+</style>
+
+    <div class="container mt-2">
+      <div id="websiteAccordion">
+          <!-- Website planning & ideation -->
+          <div class="card flex-container">
+              <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false">
+                Couple Caricatures
+              </div>
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne">
+                  <div class="card-body">
+                    Customized caricatures capturing your unique love story in a whimsical and artistic manner.
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Website Design -->
+          <div class="card flex-container">
+              <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false">
+                10-Second Video Invitation
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+                  <div class="card-body">
+                    A quick, engaging glimpse into your wedding, perfect for sharing on social media.
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Content Development -->
+          <div class="card flex-container">
+              <div class="card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false">
+                  50-Second Wedding Event Schedule Video
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
+                  <div class="card-body">
+                    Detailed video showcasing the schedule of your wedding events, infused with personal touches.
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Website Building & Testing -->
+          <div class="card flex-container">
+              <div class="card-header" id="headingFour" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false">
+                Custom Video Creation
+              </div>
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour">
+                  <div class="card-body">
+                    Tailor-made videos that reflect your personal story and wedding theme.
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Hosting & Domain Management -->
+
+  
+          <!-- Website Maintenance & Updation -->
+
+      </div>
+  </div>
+
+</div>
+
+  
+  <script>
+$(document).ready(function() {
+    // Collapse all other accordions when one is opened and reset the color
+    $('#websiteAccordion .card-header').on('click', function() {
+        // Collapse all accordions
+        $('#websiteAccordion .collapse').collapse('hide');
+
+        // Reset the color of all headers to black
+        $('#websiteAccordion .card-header').css('color', 'black');
+
+        // Change the color of the clicked header to red, it will be applied after the collapse animation
+        $(this).css('color', 'red');
+    });
+
+    // Reset color when an accordion finishes collapsing
+    $('#websiteAccordion .collapse').on('hidden.bs.collapse', function () {
+        $(this).parent().find('.card-header').css('color', 'black');
+    });
+});
+  </script>
+</section>
+<section style="  width: 100%;
+background-color: #e03a3c;
+position: relative;
+text-align: center;">
+<div class="container">
+<p style="color: white;font-size: 1.2rem; font-weight: 600;">
+Looking for exceptional wedding graphic design services? Dial <a href="tel:+917990636954" class="phone-number" style="color: white;font-size: 1.2rem; font-weight: 600;text-decoration: none;">+91 79906 36954</a> now and let's talk about your unique wedding vision. Whether you desire a couple caricature, an innovative digital invitation, or a themed design reflecting your cultural heritage, our expert graphic designers are at your service to bring your dream wedding invitations to life.</p>
+<p class="mt-4" style="color: white;font-size: 1.2rem; font-weight: 600;">
+    Capture the essence of your love story and enhance the allure of your special day.
+</p>
+</div>
+</section>
+
+  {% endblock content %}
+

@@ -1,0 +1,35 @@
+
+   <!-- Buttons for screens larger than medium -->
+   <div class="button-container d-none d-md-flex">
+    <a href="#" id="whatsappLinkLarge"  class="button whatsapp-button">
+        <span class="icon"><i class="bi bi-whatsapp"></i></span>
+    </a>
+    <a data-bs-toggle="modal" data-bs-target="#myModal"  class="button callback-button">
+        <span class="icon"><i class="bi bi-pencil-square"></i></span>
+    </a>
+</div>
+
+<!-- Buttons for screens smaller than medium -->
+<div class="button-container d-md-none">
+
+    <a href="#" id="whatsappLinkSmall" class="button whatsapp-button">
+        <span class="icon"><i class="bi bi-whatsapp"></i></span>
+        <span>WhatsApp</span>
+    </a>
+    <a data-bs-toggle="modal" data-bs-target="#myModal"  class="button callback-button">
+        <span class="icon"><i class="bi bi-pencil-square"></i></span>
+        <span>Send Enquiry</span>
+    </a>
+</div>
+
+<script>
+    window.onload = function() {
+        var pageTitle = "{{ page_title|urlencode }}";
+        var baseLink = "https://wa.me/917990636954?text=hi%20i%20found%20your%20contact%20from%20google.%20I%20need%20to%20know%20more%20about,%20";
+        var message = pageTitle + ", Can I know more";
+    
+        document.getElementById('whatsappLinkLarge').href = baseLink + encodeURIComponent(message);
+        document.getElementById('whatsappLinkSmall').href = baseLink + encodeURIComponent(message);
+    };
+</script>
+    

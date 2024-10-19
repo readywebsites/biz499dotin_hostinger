@@ -1,0 +1,516 @@
+{% extends 'base/base.html' %}
+
+{% load static %}
+
+{% block title_keywords %}
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<title>Unlock Exciting Job and Internship Opportunities with Biz499!</title>
+    <meta name="description" content="Looking for exciting career opportunities? Explore the best jobs in Surat, including sales, marketing, and website developer roles.">
+    <meta name="keywords" content="Remote jobs, internships in surat, sales internship in surat, paid internship in surat, openings in surat, digital marketing agency in surat, jobs in Surat, best jobs in Surat, sales jobs in Surat, website developer jobs in Surat, marketing agency in Surat">
+
+
+
+
+<style>
+  .accordion-item-title {
+      flex-grow: 1;
+      margin-left: 10px; /* or any desired space between icon and title */
+  }
+</style>
+<style>
+  .accordion {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /* margin: 30px auto 20px; */
+    /* background: #FFF; */
+  }
+  
+  .accordion .link {
+    cursor: pointer;
+    display: block;
+    padding: 15px 15px 15px 42px;
+    color: #FFF; /* Updated to white text color */
+    font-size: 1.15rem; /* Increased font-size */
+    font-weight: 700;
+    background: #E21B2B; /* Updated to the red color from the image */
+    border-bottom: 1px solid #FFF; /* Changed to white border color */
+    position: relative;
+  }
+  
+  .accordion li:last-child .link {
+    border-bottom: 0;
+  }
+  
+  .accordion li:nth-child(3) i {
+    left: 18px;
+}
+
+  .accordion li i {
+    position: absolute;
+    top: 18px;
+    left: 12px;
+    font-size: 24px; /* Increased icon size */
+    color: #FFF; /* Changed to white color */
+  }
+  
+  .accordion li i.fa-chevron-down {
+    right: 12px;
+    left: auto;
+    font-size: 22px; /* Adjusted size */
+  }
+  
+  /* .accordion li.open .link {
+    color: #b63b4d;
+  }
+  
+  .accordion li.open i {
+    color: #b63b4d;
+  } */
+  
+  .accordion li.open i.fa-chevron-down {
+    transform: rotate(180deg);
+  }
+  
+  .accordion > li > p {
+    display: none;
+    background: #F2F2F2; /* Lighter gray background for submenu */
+    font-size: 18px; /* Increased font size */
+    padding: 12px;
+    padding-left: 42px;
+}
+
+  </style>
+
+
+<style>
+  /* .tab-container { display: block; } */
+.container.mt-2 { display: none; }
+
+@media screen and (max-width: 768px) {
+   .container_desktop { display: none; }
+   .container.mt-2 { display: block; }
+}
+</style>
+
+<style>
+/* Style the tab */
+.tab {
+  float: left;
+
+  background-color: #f1f1f1;
+  width: 30%;
+  min-height: 210px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1.2rem;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: white;
+    color: red;
+}
+
+.tab button.active:first-child {
+    border-bottom: 1px solid #ccc; /* Border at the bottom for the first child */
+}
+
+.tab button.active:last-child {
+    border-top: 1px solid #ccc; /* Border at the top for the last child */
+}
+
+.tab button.active:not(:first-child):not(:last-child) {
+    border-top: 1px solid #ccc; /* Border at the top for others */
+    border-bottom: 1px solid #ccc; /* Border at the bottom for others */
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  width: 70%;
+  min-height: 210px;
+}
+
+.tab-container {
+  border: 1px solid #ccc; /* Add a border around the entire container */
+  display: flex; /* Make the children (.tab and .tabcontent) display side by side */
+}
+
+</style>
+      
+
+
+{% endblock title_keywords %}
+
+ 
+
+<!-- Navigation Bar -->
+
+{% block content %}
+
+
+<section id="hero" class="d-flex align-items-center" style="background: url('/static/img/hero-jobs.jpg')  center no-repeat;">
+
+  <div class="container" data-aos="zoom-out" data-aos-delay="100">
+    <div class="row">
+      <div class="col">
+        <h1 class="mb-4 mt-5">Find Your Next Job in Surat</h1>
+        <h2>Connect with top employers and advance your career in sales, development, or design. Browse our listings and apply today.</h2>
+        <a data-bs-toggle="modal" data-bs-target="#myModal"  class="btn-get-started" style="background: #e03a3c; border-color: #e03a3c; animation: none; ">Contact Now <i class="bi bi-chevron-right"> </i></a>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+<section class="p-md--5">
+  <div class="container">
+
+    <!-- Section 1 Sales Development Jobs-->
+    <div class="row mb-5 p-5 " style="background-color: #f3f3f3;">
+      <div class="col-md-6">
+        <img src="{% static 'img/jobs-1.png' %}" alt="Sales Development Jobs" class="img-fluid">
+      </div>
+      <div class="col-md-6">
+        <h2 class="mb-3">Dynamic Sales Careers in Surat</h2>
+        <p class="mb-3">Join Surat's thriving sales sector and propel your career forward. Engage with diverse clientele, drive strategic business growth, and develop key commercial skills in a city known for its vibrant markets and entrepreneurial spirit.</p>
+      </div>
+    </div>
+    
+    <!-- Section 2: Website Development Jobs-->
+    <div class="row mb-5 mt-5 p-5 ">
+      <div class="col-md-6">
+        <h2 class="mb-3">Full Stack Developer Opportunities</h2>
+        <p class="mb-3">Surat's tech industry is calling! As a Full Stack Developer, you'll have the opportunity to work on comprehensive development projects, from back-end to front-end, and shape the future of digital solutions in one of India's fastest-growing cities.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="{% static 'img/jobs-2.png' %}" alt="Website Development" class="img-fluid">
+      </div>
+    </div>
+
+    <!-- Section 3: Mobile App Development Jobs-->
+    <div class="row mb-5 mt-5 p-5" style="background-color: #f3f3f3;">
+      <div class="col-md-6">
+        <img src="{% static 'img/jobs-3.png' %}" alt="Mobile App Development" class="img-fluid">
+      </div>
+      <div class = "col-md-6">
+        <h2 class="mb-3">Mobile App Development Roles</h2>
+        <p class="mb-3">Capitalize on the mobile revolution in Surat by joining as an App Developer. Work on creating innovative apps that solve real-world problems, engage users, and transform businesses in a city that values technology and progress.</p>
+      </div>
+    </div>
+
+    <!-- Section 4: Graphics Design Jobs-->
+    <div class="row mb-5 mt-5 p-5">
+
+      <div class="col-md-6">
+        <h2 class="mb-3">Graphic Design Positions Available</h2>
+        <p class="mb-3">Your artistic skills can come to life in Surat's dynamic design landscape. Contribute to diverse projects, from branding to digital media, and create visual masterpieces that communicate, persuade, and inspire.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="{% static 'img/jobs-4.png' %}" alt="Graphics Design Jobs" class="img-fluid" >
+      </div>
+    </div>
+
+    <!-- Section 5: Digital Marketing Jobs -->
+    <div class="row mb-5 mt-5 p-5 " style="background-color: #f3f3f3;">
+      <div class="col-md-6">
+        <img src="{% static 'img/jobs-5.png' %}" alt="Digital Marketing Jobs" class="img-fluid">
+      </div>
+      <div class="col-md-6">
+        <h2 class="mb-3">Digital Marketing Careers in Surat</h2>
+        <p class="mb-3">Dive into the digital marketing arena in Surat, where creativity meets analytics. Use your skills in SEO, content marketing, and social media to help brands stand out in the digital domain and connect with audiences effectively.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="hero_alt_down" class="d-flex align-items-center" style="background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.85)), url('/static/img/jobs-hero-alt.jpg') bottom center no-repeat;">
+
+  <div class="container" data-aos="zoom-out" data-aos-delay="100">
+    <div class="row">
+      <div class="col">
+        <h1 class="mb-4 mt-5">Unlock Exciting Job and Internship Opportunities with Biz499!</h1>
+        <p style="font-size:1.2rem;line-height:1.5rem;font-weight:400;color: white;">Empower Your Career with Biz499.
+          Taking a job is more than just earning a salary; it's a strategic step toward your career success. Making a well-informed decision about your profession is crucial. Now is the time to have your 'aha' moment and discover how the right job can propel your career forward.
+           </p>
+           <a href="https://wa.me/917990636954?text=I%20am%20interested%20in%20contacting%20Biz499%20to%20learn%20more%about%job/internship%opprtunity%for%the%position%of%.%20Please%20provide%20details.%20Thank%20you!"  class="btn-get-started" style="background: #e03a3c; border-color: #e03a3c; animation: none;">Apply Now <i class="bi bi-chevron-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<section class="container"> 
+  <div class="container text-center" data-aos="zoom-out" data-aos-delay="100">
+        <h1 class="mb-5" style="font-size: 2.6rem;  font-weight: 700;">Transform Your Career with Biz499 </h1>
+
+  <p style="font-size: 1.2rem;font-weight: 500;">
+    Advance your career in sales, development, or design with Biz499. Browse our listings and apply today.
+
+  
+  </p>     
+
+</div>
+<div class="container_desktop">
+
+  <div class="tab-container">
+
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'Ideation'); updateHash('sales_or_telecalling_job_or_internship')" id="defaultOpen">Sales Executive</button>
+      <button class="tablinks" onclick="openCity(event, 'Design'); updateHash('web_developer_job_or_internship')">Full Stack Developer</button>
+      <button class="tablinks" onclick="openCity(event, 'Development'); updateHash('app_developer_job_or_internship')"> App Development</button>
+      <button class="tablinks" onclick="openCity(event, 'Building'); updateHash('graphic_designer_job_or_internship')">Graphic Designer</button>
+      <button class="tablinks" onclick="openCity(event, 'Digital'); updateHash('digital_marketing_job_or_internship')">Digital Marketing</button>
+
+    </div>
+    
+    <div id="Ideation" class="tabcontent">
+      <h3 class="mt-4">Sales Executive</h3>
+      <p>Explore sales jobs in Surat where you can grow your career, engage with clients, and drive business success. (We also offer opportunities to seekers looking remote telecalling roles) </p>
+    </div>
+    
+    <div id="Design" class="tabcontent">
+      <h3 class="mt-4">Full Stack Developer</h3>
+      <p> Join the tech industry in Surat as a Full Stack Developer and work on cutting-edge projects.</p> 
+    </div>
+    
+    <div id="Development" class="tabcontent">
+      <h3 class="mt-4"> App Development</h3>
+      <p>Build and develop innovative applications with a job in Surat's vibrant tech scene.</p>
+    </div>
+    <div id="Building" class="tabcontent">
+      <h3 class="mt-4">Graphic Designer</h3>
+      <p>Create visually stunning designs and contribute to Surat's creative industry as a Graphic Designer..</p>
+    </div>      
+    <div id="Digital" class="tabcontent">
+      <h3 class="mt-4">Digital Marketer</h3>
+      <p>If you are passionate about digital marketing and ready to embark on a rewarding journey with a dynamic agency, we invite you to apply and be part of our success story. Seize the opportunity to shape the future of digital marketing with Biz499.</p>
+    </div>      
+    </div>
+
+
+
+</div>
+
+    
+    
+    <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
+    
+
+
+<style>
+        .card {
+          border: 1px solid #ddd;
+          margin-bottom: 10px;
+      }
+      .card-header {
+          background-color: white;
+          color: black;
+          cursor: pointer;
+          border-bottom: 1px solid #ddd;
+          padding: 12px 16px;
+          font-size: 1.2rem;
+      }
+      .card-header[aria-expanded="true"] {
+          color: red;
+      }
+      .card-body {
+          background-color: white;
+          color: black;
+          padding: 16px;
+      }
+
+      /* Flexbox modifications */
+      .flex-container {
+          display: flex;
+          flex-direction: column;
+      }
+
+</style>
+
+    <div class="container mt-2">
+      <div id="websiteAccordion">
+          <!-- Website planning & ideation -->
+          <div class="card flex-container">
+              <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"  onclick="updateHash('sales_or_telecalling_job_or_internship')">
+                Sales Executive
+              </div>
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne">
+                  <div class="card-body">
+                    Explore sales jobs in Surat where you can grow your career, engage with clients, and drive business success.
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Website Design -->
+          <div class="card flex-container">
+              <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"  onclick="updateHash('web_developer_job_or_internship')">
+                Full Stack Developer
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+                  <div class="card-body">
+                     Join the tech industry in Surat as a Full Stack Developer and work on cutting-edge projects.
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Content Development -->
+          <div class="card flex-container">
+              <div class="card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"  onclick="updateHash('app_developer_job_or_internship')">
+                   App Development
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
+                  <div class="card-body">
+                    Build and develop innovative applications with a job in Surat's vibrant tech scene.
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Website Building & Testing -->
+          <div class="card flex-container">
+              <div class="card-header" id="headingFour" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"  onclick="updateHash('graphic_designer_job_or_internship')">
+                Graphic Designer
+              </div>
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour">
+                  <div class="card-body">
+                    Create visually stunning designs and contribute to Surat's creative industry as a Graphic Designer.
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Hosting & Domain Management -->
+
+          <div class="card flex-container">
+            <div class="card-header" id="headingFive" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"  onclick="updateHash('digital_marketing_job_or_internship')">
+              Digtial Marketing
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive">
+                <div class="card-body">
+                  If you are passionate about digital marketing and ready to embark on a rewarding journey with a dynamic agency, we invite you to apply and be part of our success story. Seize the opportunity to shape the future of digital marketing with Biz499.
+                </div>
+            </div>
+        </div>
+          <!-- Website Maintenance & Updation -->
+
+      </div>
+  </div>
+
+</div>
+
+  
+  <script>
+$(document).ready(function() {
+    // Collapse all other accordions when one is opened and reset the color
+    $('#websiteAccordion .card-header').on('click', function() {
+        // Collapse all accordions
+        $('#websiteAccordion .collapse').collapse('hide');
+
+        // Reset the color of all headers to black
+        $('#websiteAccordion .card-header').css('color', 'black');
+
+        // Change the color of the clicked header to red, it will be applied after the collapse animation
+        $(this).css('color', 'red');
+    });
+
+    // Reset color when an accordion finishes collapsing
+    $('#websiteAccordion .collapse').on('hidden.bs.collapse', function () {
+        $(this).parent().find('.card-header').css('color', 'black');
+    });
+});
+  </script>
+</section>
+<section style="  width: 100%;
+background-color: #e03a3c;
+position: relative;
+text-align: center;">
+<div class="container">
+  <p style="color: white;font-size: 1.2rem; font-weight: 600;">
+    Discover exciting career opportunities with Biz499. Call us at <a href="tel:+917990636954" class="phone-number" style="color: white;font-size: 1.2rem; font-weight: 600;text-decoration: none;">+91 79906 36954</a> and let's discuss your professional aspirations. Whether it's a role in sales, software development, app creation, or graphic design, our team is dedicated to connecting you with the job that aligns with your skills and ambitions. Start your journey towards a fulfilling career today.
+    </p>
+    <p class="mt-4" style="color: white;font-size: 1.2rem; font-weight: 600;">
+        Embark on a path that matches your professional goals and enhances your career growth with Biz499.
+    </p>
+</div>
+</section>
+
+<script>
+  function updateHash(hash) {
+  window.location.hash = hash;
+}
+
+</script>
+
+<script>
+  function synchronizeTabsAndAccordions() {
+  var hash = window.location.hash.replace('#', '');
+  if (hash) {
+    // For desktop tabs
+    $('.tablinks').each(function() {
+      if (this.onclick.toString().includes(hash)) {
+        this.click();
+      }
+    });
+
+    // For mobile accordion
+    $('.container.mt-2 .card-header').each(function() {
+      if (this.getAttribute('data-target').includes(hash)) {
+        $(this).click();
+      }
+    });
+  }
+}
+
+// Call this function on page load and hash change
+$(document).ready(synchronizeTabsAndAccordions);
+$(window).on('hashchange', synchronizeTabsAndAccordions);
+
+</script>
+
+  {% endblock content %}
+

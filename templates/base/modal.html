@@ -1,0 +1,32 @@
+<div class="modal" id="myModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title mx-auto">Contact Form</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" style="position: absolute; right: 30px; top: 30px;"></button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="container text-center"> <!-- Center the content using 'text-center' class -->
+          <form action="{% url 'submit_contact_form' %}" method="post">
+            {% csrf_token %}
+            <div class="mb-3 mt-3">
+              <input type="name" class="form-control" id="name" placeholder="Name*" name="name" required>
+            </div>
+            <div class="mb-3">
+              <input type="tel" class="form-control" id="mobile" placeholder="Mobile*" name="phone" required>
+            </div>
+            <!-- <div class="mb-3">
+              <input type="text" class="form-control" id="budget" placeholder="Budget in ₹" name="budget" required>
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="business_type" placeholder="Business Type" name="business_type" required>
+            </div> -->
+            <button type="submit" name="submit_modal" class="btn btn-danger" id="submit_button_modal">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

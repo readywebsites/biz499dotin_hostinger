@@ -1,0 +1,198 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+
+{% block title_keywords %}
+    <title>WordPress Development Company | Top WordPress Developers in India</title>
+    <meta name="description" content="Leading WordPress development company in India, specializing in fast, innovative WordPress website solutions for businesses of all sizes.">
+    <meta name="keywords" content="wordpress website development agency, wordpress developers in India, fast website development, wordpress websites, freelance web developer">
+
+
+
+<style>
+
+
+.animated-part {
+            display: inline-block;
+
+            position: relative;
+
+            margin-top: 13px;
+
+        }
+
+.animated-part svg {
+            fill: none;
+            stroke: #e03a3c;
+            stroke-width: 7;
+            stroke-miterlimit: 10;
+            stroke-dasharray: 1250;
+            stroke-dashoffset: 1250;
+            stroke-linecap: round;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            padding-left: 8px;
+            padding-right: 8px;
+            width: calc(100% + 35px);
+            /* height: 37px; */
+            opacity: 0;
+            transform: translate(-50%, -50%);
+            animation: dash 3s ease-out 1 forwards, opacityChange 3s ease-out 1 forwards;
+            z-index: 99;
+        }
+
+        @keyframes dash {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        @keyframes opacityChange {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+</style>
+
+
+      
+{% endblock title_keywords %}
+
+ 
+
+<!-- Navigation Bar -->
+
+{% block content %}
+
+
+  <section id="hero" class="d-flex align-items-center" style="background: url('/static/img/wordpress-website-background.jpg') center no-repeat;">
+
+    <div class="container" data-aos="zoom-out" data-aos-delay="100">
+      <div class="row">
+        <div class="col">
+
+
+					<h1>Best <span class="animated-part">Wordpress<svg id="extraTextsvg" style="height: 74px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none"><path d="M325,18C228.7-8.3,118.5,8.3,78,21C22.4,38.4,4.6,54.6,5.6,77.6c1.4,32.4,52.2,54,142.6,63.7 c66.2,7.1,212.2,7.5,273.5-8.3c64.4-16.6,104.3-57.6,33.8-98.2C386.7-4.9,179.4-1.4,126.3,20.7"></path></svg></span> development services!</h1>
+				
+
+          <script>
+            // Function to adjust the SVG height
+            function adjustSvgHeight() {
+              var extraText = document.getElementById('extraTextsvg');
+              var windowWidth = window.innerWidth;
+          
+              if (windowWidth >= 768) {
+                extraText.style.height = '74px';
+              } else {
+                extraText.style.height = '42px';
+              }
+            }
+          
+            // Call the function on initial page load
+            window.addEventListener('load', adjustSvgHeight);
+          
+            // Call the function when the window is resized
+            window.addEventListener('resize', adjustSvgHeight);
+          </script>
+				
+				<h2>"Experience excellence in web development with Biz499's premier WordPress services. Our skilled team crafts dynamic and user-friendly WordPress websites, tailored to elevate your online presence. Trust us for top-notch development that aligns with the latest industry standards.</h2>
+          <a data-bs-toggle="modal" data-bs-target="#myModal"  class="btn-get-started" style="background: #e03a3c; border-color: #e03a3c; animation: none; ">Contact Now <i class="bi bi-chevron-right"> </i></a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+<main id="main">
+
+
+	<section class="extra_tex" id="extraText" style="padding: 90px 20px;">
+
+	
+		<div class="container text-center" data-aos="zoom-out" data-aos-delay="100">
+			<h1 class="mb-5" style="text-align: left; font-size: 2.2rem;  font-weight: 700;">As a WordPress website development company, we offer a comprehensive range of services to cater to your needs. Our services include: </h1>
+	
+	
+			<ul class="bullet-list" style="list-style: none;">
+				<li style="font-weight: 500; color: #111111; font-size: 0.9rem;"><i class="bi bi-hand-index-thumb text-danger" style="display: inline-block; transform: rotate(90deg); font-weight: 800; font-size: 1rem; margin-right: 5px;"></i> <span style="font-weight: 800; font-size: 1rem; line-height: 0.9rem;">	WordPress Website Development</span><br>
+	Our team of skilled WordPress developers can create a custom website tailored to your unique business requirements. We focus on delivering user-friendly interfaces, seamless navigation, and engaging designs that captivate your target audience.</li>
+				<li style="font-weight: 500; color: #111111; font-size: 0.9rem;"><i class="bi bi-hand-index-thumb text-danger" style="display: inline-block; transform: rotate(90deg); font-weight: 800; font-size: 1rem; margin-right: 5px;"></i> <span style="font-weight: 800; font-size: 1rem; line-height: 0.9rem;">Responsive Design</span><br>With the increasing use of mobile devices, having a responsive website is crucial. Our WordPress website developers ensure that your website is fully optimized and responsive across all screen sizes and devices.</li>
+				<li style="font-weight: 500; color: #111111; font-size: 0.9rem;"><i class="bi bi-hand-index-thumb text-danger" style="display: inline-block; transform: rotate(90deg); font-weight: 800; font-size: 1rem; margin-right: 5px;"></i> <span style="font-weight: 800; font-size: 1rem; line-height: 0.9rem;">Website Optimisation</span><br>We focus on optimizing your WordPress website for speed, performance, and search engine visibility. Our developers employ best practices in WordPress optimization, including code optimization, image compression, caching, and SEO-friendly structures.</li>
+				<li style="font-weight: 500; color: #111111; font-size: 0.9rem;"><i class="bi bi-hand-index-thumb text-danger" style="display: inline-block; transform: rotate(90deg); font-weight: 800; font-size: 1rem; margin-right: 5px;"></i> <span style="font-weight: 800; font-size: 1rem; line-height: 0.9rem;">Website Migration</span><br>If you have an existing website and want to migrate it to WordPress, our team can handle the migration process seamlessly. We ensure that your website data is transferred securely and efficiently to the WordPress platform.</li>
+				<li style="font-weight: 500; color: #111111; font-size: 0.9rem;"><i class="bi bi-hand-index-thumb text-danger" style="display: inline-block; transform: rotate(90deg); font-weight: 800; font-size: 1rem; margin-right: 5px;"></i> <span style="font-weight: 800; font-size: 1rem; line-height: 0.9rem;">Maintenance & Support</span><br>We offer reliable ongoing maintenance and support services to ensure that your WordPress website runs smoothly and remains secure. Our team is available to assist you with updates, backups, security measures, and troubleshooting.</li>
+				<li style="font-weight: 500; color: #111111; font-size: 0.9rem;"><i class="bi bi-hand-index-thumb text-danger" style="display: inline-block; transform: rotate(90deg); font-weight: 800; font-size: 1rem; margin-right: 5px;"></i> <span style="font-weight: 800; font-size: 1rem; line-height: 0.9rem;">Wordpress Theme Customisation</span><br>Our experienced team helps you select the ideal ecommerce platform for your business. Whether it's WooCommerce, Shopify, Magento, or custom coding, we've got you covered. We understand that the choice of the platform is a critical decision, and it should align with your business needs, scalability, and long-term goals. Our experts will guide you through the pros and cons of each option, ensuring that you make the best
+        </ul>      </div>
+      </section>
+
+					<section class="p-md-5">
+						<div class="container">
+							<!-- Secti -->
+							<div class="row mb-5 p-5" style="background-color: #f3f3f3;">
+								<div class="col-md-6">
+									<img src="{% static 'img/wordpress-website-developers-1.jpg' %}" alt="Website Design" class="img-fluid">
+								</div>
+								<div class="col-md-6">
+									<h2 class="mb-3">Exceptional WordPress Website Design</h2>
+									<p class="mb-3">In an ever-evolving digital landscape, having a well-designed and highly functional website is crucial. Our skilled WordPress website developers recognize the power and versatility of the WordPress platform. We have the expertise to create customized solutions tailored to your specific needs, enabling you to make a lasting impression on your target audience.</p>
+								</div>
+							</div>
+							
+							<!-- Section 2: User-Friendly WordPress Development -->
+							<div class="row mb-5 mt-5 p-5">
+								<div class="col-md-6">
+									<h2 class="mb-3">User-Friendly WordPress Development</h2>
+									<p class="mb-3">We specialize in building websites that are not only visually appealing but also user-friendly and intuitive. Leveraging our extensive knowledge of WordPress, we craft websites that are easy to navigate, ensuring a seamless user experience for your visitors. From small businesses to large enterprises, we've successfully developed WordPress websites for a diverse range of clients, each with unique requirements and goals.</p>
+								</div>
+								<div class="col-md-6">
+									<img src="{% static 'img/wordpress-website-developers-2.jpg' %}" alt="User-Friendly Development" class="img-fluid">
+								</div>
+							</div>
+					
+							<!-- Section 3: Stunning WordPress Website Designs -->
+							<div class="row mb-5 mt-5 p-5" style="background-color: #f3f3f3;">
+								<div class="col-md-6">
+									<img src="{% static 'img/wordpress-website-developers-3.jpg' %}" alt="Website Designs" class="img-fluid">
+								</div>
+								<div class = "col-md-6">
+									<h2 class="mb-3">Stunning WordPress Website Designs</h2>
+									<p class="mb-3">When it comes to design, our talented WordPress website designers are adept at transforming your ideas into captivating visuals. They understand the importance of creating a website that reflects your brand identity and resonates with your target market. With their creative design skills and deep understanding of WordPress, they ensure that your website stands out from the competition while maintaining a cohesive and professional look.</p>
+								</div>
+							</div>
+					
+							<!-- Section 4: Client-Centric WordPress Solutions -->
+							<div class="row mb-5 mt-5 p-5">
+
+								<div class="col-md-6">
+									<h2 class="mb-3">Client-Centric WordPress Solutions</h2>
+									<p class="mb-3">As a trusted WordPress development agency, we place great emphasis on client satisfaction and collaboration. We believe that successful projects are built on effective communication and understanding. That's why we work closely with you to comprehend your unique requirements, business objectives, and target audience. By incorporating your insights and feedback throughout the development process, we ensure that the end result aligns perfectly with your vision.</p>
+								</div>
+                <div class="col-md-6">
+									<img src="{% static 'img/wordpress-website-developers-4.jpg' %}" alt="Client-Centric Solutions" class="img-fluid">
+								</div>
+							</div>
+					
+							<!-- Section 5: WordPress Development Excellence -->
+							<div class="row mb-5 mt-5 p-5" style="background-color: #f3f3f3;">
+								<div class="col-md-6">
+									<img src="{% static 'img/wordpress-website-developers-5.jpg' %}" alt="Development Excellence" class="img-fluid">
+								</div>
+								<div class="col-md-6">
+									<h2 class="mb-3">WordPress Development Excellence</h2>
+									<p class="mb-3">Choosing us as your trusted WordPress development partner means gaining access to a team of professionals who are passionate about delivering excellence. Our WordPress website developers and designers stay up-to-date with the latest industry trends and best practices, ensuring that your website is equipped with the most advanced features and functionalities. We are committed to providing you with a website that not only looks impressive but also performs flawlessly across all devices.</p>
+								</div>
+							</div>
+						</div>
+					</section>
+					
+
+
+
+  </main><!-- End #main -->
+
+  {% endblock content %}
